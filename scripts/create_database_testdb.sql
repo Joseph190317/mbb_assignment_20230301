@@ -1,0 +1,4 @@
+CREATE DATABASE TESTDB;
+
+ALTER LOGIN sa ENABLE;
+ALTER LOGIN sa WITH PASSWORD = 'mbb_assignment_sa_password';

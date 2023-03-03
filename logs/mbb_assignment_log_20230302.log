@@ -1,0 +1,404 @@
+2023-03-02 18:20:14.806 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 25420 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:20:14.806 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:20:14.843 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 18:20:14.843 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 18:20:15.484 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:20:15.490 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:20:15.490 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:20:15.490 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:20:15.540 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:20:15.540 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 696 ms
+2023-03-02 18:20:15.829 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-02 18:20:15.838 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:20:15.855 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 18:20:15.862 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 1.339 seconds (JVM running for 1.844)
+2023-03-02 18:20:20.847 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 18:20:20.847 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-02 18:20:20.848 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-02 18:20:20.852 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 53f3db4c-3457-4fa6-b2dd-d18ee168d531
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:20:20.853 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 48
+2023-03-02 18:20:20.902 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=Joseph, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:20:21.116 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.http.ResponseEntity.getStatusCodeValue()" because "responseEntity" is null] with root cause
+java.lang.NullPointerException: Cannot invoke "org.springframework.http.ResponseEntity.getStatusCodeValue()" because "responseEntity" is null
+	at com.example.myapp.controller.controlAcc.get_user_account(controlAcc.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:670)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.example.myapp.service.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:40)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-02 18:22:27.531 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-03-02 18:22:27.556 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:22:27.556 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:22:27.557 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-02 18:22:27.560 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:22:27.563 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:22:27.602 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 25420 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:22:27.602 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:22:27.714 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:22:27.714 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:22:27.714 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:22:27.714 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:22:27.725 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:22:27.725 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 122 ms
+2023-03-02 18:22:27.782 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-02 18:22:27.785 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:22:27.788 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 18:22:27.790 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 0.204 seconds (JVM running for 133.773)
+2023-03-02 18:22:27.791 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-03-02 18:24:28.625 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-03-02 18:24:28.655 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:24:28.655 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:24:28.657 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:24:28.658 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:24:28.706 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 25420 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:24:28.707 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:24:28.793 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:24:28.793 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:24:28.793 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:24:28.793 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:24:28.802 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:24:28.802 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 94 ms
+2023-03-02 18:24:28.813 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServices': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.myapp.service.AccountServices] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@af8e774]
+2023-03-02 18:24:28.813 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:24:28.816 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-02 18:24:28.826 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServices': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.myapp.service.AccountServices] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@af8e774]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.myapp.MbbAssignment230301Application.main(MbbAssignment230301Application.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.myapp.service.AccountServices] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@af8e774]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: JSONObject
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: JSONObject
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 29 common frames omitted
+2023-03-02 18:25:05.989 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 25420 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:25:05.989 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:25:06.078 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:25:06.079 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:06.079 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:25:06.079 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:25:06.088 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:25:06.088 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 99 ms
+2023-03-02 18:25:06.096 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServices': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.myapp.service.AccountServices] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@57285323]
+2023-03-02 18:25:06.096 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:25:06.099 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-02 18:25:06.101 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accountServices': Lookup method resolution failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.example.myapp.service.AccountServices] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@57285323]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:289)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.myapp.MbbAssignment230301Application.main(MbbAssignment230301Application.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.example.myapp.service.AccountServices] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@57285323]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
+	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:267)
+	... 23 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: JSONObject
+	at java.base/java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.base/java.lang.Class.privateGetDeclaredMethods(Class.java:3402)
+	at java.base/java.lang.Class.getDeclaredMethods(Class.java:2504)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:467)
+	... 25 common frames omitted
+Caused by: java.lang.ClassNotFoundException: JSONObject
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 29 common frames omitted
+2023-03-02 18:25:18.564 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 6696 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:25:18.565 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:25:18.609 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 18:25:18.610 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 18:25:19.555 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:25:19.562 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:19.562 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:25:19.562 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:25:19.628 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:25:19.629 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1019 ms
+2023-03-02 18:25:19.903 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-02 18:25:19.911 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:19.925 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 18:25:19.932 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 1.678 seconds (JVM running for 2.277)
+2023-03-02 18:25:28.365 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-02 18:25:28.380 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:28.380 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:25:28.388 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:28.389 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:28.432 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 6696 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:25:28.432 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:25:28.543 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:25:28.544 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:28.544 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:25:28.544 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:25:28.558 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:25:28.558 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 124 ms
+2023-03-02 18:25:28.621 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-02 18:25:28.625 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:25:28.628 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 18:25:28.631 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 0.218 seconds (JVM running for 10.975)
+2023-03-02 18:25:28.632 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-03-02 18:25:30.345 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 18:25:30.345 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-02 18:25:30.345 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-03-02 18:25:30.350 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:25:30.351 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:25:30.351 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:25:30.351 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:25:30.351 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 781ba232-673f-41a5-be00-5923f761d34e
+2023-03-02 18:25:30.352 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:25:30.352 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:25:30.352 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:25:30.352 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 48
+2023-03-02 18:25:30.403 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=Joseph, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:25:30.614 INFO  c.e.myapp.controller.controlAcc - Response: {}
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 2fe20cba-68c0-4788-ab34-1a7b2ad8db17
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:26:11.378 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 56
+2023-03-02 18:26:11.378 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=null, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:26:11.430 INFO  c.e.myapp.controller.controlAcc - Response: {"phoneNo":"012-3456789"}
+2023-03-02 18:27:04.277 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-02 18:27:04.303 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:04.303 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:27:04.304 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-02 18:27:04.306 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:04.306 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:04.344 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 6696 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:27:04.344 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:27:04.435 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:27:04.436 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:04.436 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:27:04.436 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:27:04.445 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:27:04.445 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 100 ms
+2023-03-02 18:27:04.502 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-02 18:27:04.505 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:04.507 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 18:27:04.509 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 0.177 seconds (JVM running for 106.854)
+2023-03-02 18:27:04.509 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-03-02 18:27:08.887 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 18:27:08.887 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-02 18:27:08.888 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: eaf3eb4f-13f4-484a-a6d7-a824f69188e3
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:27:08.888 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 56
+2023-03-02 18:27:08.890 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=null, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:27:08.935 INFO  c.e.myapp.controller.controlAcc - Response: {"phoneNo":"012-3456789"}
+2023-03-02 18:27:40.676 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-02 18:27:40.690 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:40.690 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:27:40.690 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-02 18:27:40.691 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:40.692 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:40.734 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 6696 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:27:40.734 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:27:40.818 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:27:40.819 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:40.819 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:27:40.819 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:27:40.827 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:27:40.829 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 94 ms
+2023-03-02 18:27:40.868 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-02 18:27:40.870 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:40.872 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 18:27:40.874 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 0.154 seconds (JVM running for 143.219)
+2023-03-02 18:27:40.875 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-03-02 18:27:45.779 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 18:27:45.779 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-02 18:27:45.779 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 8934b69e-ef92-4bd1-88aa-4f57cd41f251
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:27:45.779 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:27:45.780 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 56
+2023-03-02 18:27:45.781 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=null, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:27:45.835 INFO  c.e.myapp.controller.controlAcc - Response: {"phoneNo":"012-3456789"}
+2023-03-02 18:27:59.666 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-02 18:27:59.696 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:59.696 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-02 18:27:59.696 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-02 18:27:59.698 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:59.699 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:59.737 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 6696 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-02 18:27:59.737 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-02 18:27:59.818 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-02 18:27:59.819 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:59.819 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-02 18:27:59.819 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-02 18:27:59.825 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-02 18:27:59.825 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 87 ms
+2023-03-02 18:27:59.865 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-02 18:27:59.867 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 18:27:59.869 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 18:27:59.872 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 0.148 seconds (JVM running for 162.217)
+2023-03-02 18:27:59.872 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-03-02 18:28:04.918 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 18:28:04.918 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-02 18:28:04.918 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 73220a18-d9ad-42dd-aa11-7e4c8e65af23
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:28:04.919 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 56
+2023-03-02 18:28:04.921 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=null, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:28:04.948 INFO  c.e.myapp.controller.controlAcc - Response: {"phoneNo":"012-3456789"}
+2023-03-02 18:28:07.507 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 07ed6f74-6f1d-461e-a0bc-2625f2a788f6
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:28:07.508 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 57
+2023-03-02 18:28:07.509 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=null, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:28:07.539 INFO  c.e.myapp.controller.controlAcc - Response: {}
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request: GET /api/get-user-account-info
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 44a9558d-7b43-451b-afa6-54705d3b11a0
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-02 18:28:10.543 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 56
+2023-03-02 18:28:10.543 INFO  c.e.myapp.controller.controlAcc - Request Body: AccountInfo [email=null, phoneNo=null, name=null, age=0, addressLine1=null, addressLine2=null, city=null, state=null, zipCode=0, country=null]
+2023-03-02 18:28:10.570 INFO  c.e.myapp.controller.controlAcc - Response: {"phoneNo":"012-3456789"}

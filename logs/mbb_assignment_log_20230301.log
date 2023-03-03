@@ -1,0 +1,189 @@
+2023-03-01 17:47:53.128 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 40352 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-01 17:47:53.129 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-01 17:47:53.167 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-01 17:47:53.169 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-01 17:47:53.782 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-01 17:47:53.788 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-01 17:47:53.788 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-01 17:47:53.788 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-01 17:47:53.827 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-01 17:47:53.827 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 658 ms
+2023-03-01 17:47:53.868 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: static javax.sql.DataSource com.example.myapp.service.AccountServices.dataSource
+2023-03-01 17:47:54.027 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-01 17:47:54.035 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-01 17:47:54.047 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-01 17:47:54.053 INFO  c.e.m.MbbAssignment230301Application - Started MbbAssignment230301Application in 1.203 seconds (JVM running for 1.704)
+2023-03-01 17:47:57.958 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-01 17:47:57.958 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-01 17:47:57.959 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-01 17:47:57.963 INFO  c.e.m.service.RequestLoggingFilter - Request: POST /api/create-user-account
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-type: application/json
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: user-agent: PostmanRuntime/7.31.1
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept: */*
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: postman-token: 550c8dcb-6165-4f20-a2ab-58366f25a6c7
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: host: localhost:8080
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: accept-encoding: gzip, deflate, br
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: connection: keep-alive
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: content-length: 144
+2023-03-01 17:47:57.964 INFO  c.e.m.service.RequestLoggingFilter - Request Header: cookie: JSESSIONID=FC26D0EBD265974A4A7F2FD613C3519B
+2023-03-01 17:47:58.013 INFO  c.example.myapp.controller.createAcc - Request Body: AccountInfo [name=Joseph, age=10, userName=abc, passWord=nopassword, emailAddr=omg]
+2023-03-01 17:47:58.015 INFO  c.example.myapp.controller.createAcc - Response Status: 500
+2023-03-01 17:47:58.015 INFO  c.example.myapp.controller.createAcc - Response Header: [Content-Type:"text/plain"]
+2023-03-01 17:47:58.015 INFO  c.example.myapp.controller.createAcc - Response Body  : {"status":"false", "desc":"Cannot invoke "javax.sql.DataSource.getConnection()" because "com.example.myapp.service.AccountServices.dataSource" is null"}
+2023-03-01 17:50:30.463 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-03-01 17:50:30.487 INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-01 17:50:30.487 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-01 17:50:30.488 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-01 17:50:30.512 INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-01 17:50:30.515 INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-01 17:50:30.557 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 40352 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-01 17:50:30.557 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-01 17:50:30.649 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-01 17:50:30.649 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-01 17:50:30.649 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-01 17:50:30.649 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-01 17:50:30.658 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-01 17:50:30.658 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 100 ms
+2023-03-01 17:50:30.665 INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: static javax.sql.DataSource com.example.myapp.service.AccountServices.dataSource
+2023-03-01 17:50:30.683 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'getAcc' method 
+com.example.myapp.controller.getAcc#create_user_account(AccountInfo)
+to {POST [/api/create-user-account]}: There is already 'createAcc' bean method
+com.example.myapp.controller.createAcc#create_user_account(AccountInfo) mapped.
+2023-03-01 17:50:30.684 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-01 17:50:30.687 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-01 17:50:30.701 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'getAcc' method 
+com.example.myapp.controller.getAcc#create_user_account(AccountInfo)
+to {POST [/api/create-user-account]}: There is already 'createAcc' bean method
+com.example.myapp.controller.createAcc#create_user_account(AccountInfo) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.myapp.MbbAssignment230301Application.main(MbbAssignment230301Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'getAcc' method 
+com.example.myapp.controller.getAcc#create_user_account(AccountInfo)
+to {POST [/api/create-user-account]}: There is already 'createAcc' bean method
+com.example.myapp.controller.createAcc#create_user_account(AccountInfo) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted
+2023-03-01 17:52:23.743 INFO  c.e.m.MbbAssignment230301Application - Starting MbbAssignment230301Application using Java 17.0.4.1 on Joseph with PID 40352 (C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes started by JosephTan in C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301)
+2023-03-01 17:52:23.743 INFO  c.e.m.MbbAssignment230301Application - No active profile set, falling back to 1 default profile: "default"
+2023-03-01 17:52:23.832 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-01 17:52:23.833 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-01 17:52:23.833 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-01 17:52:23.833 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-01 17:52:23.842 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-01 17:52:23.842 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 98 ms
+2023-03-01 17:52:23.847 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getAcc' defined in file [C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes\com\example\myapp\controller\getAcc.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.myapp.controller.getAcc]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	AccountRepository cannot be resolved to a type
+	Page cannot be resolved to a type
+	User cannot be resolved to a type
+	Pageable cannot be resolved to a type
+	PageRequest cannot be resolved
+	The method by(String[]) is undefined for the type SpringDataWebProperties.Sort
+	Page cannot be resolved to a type
+	AccountRepository cannot be resolved to a type
+
+2023-03-01 17:52:23.847 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-03-01 17:52:23.849 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-01 17:52:23.851 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'getAcc' defined in file [C:\Users\JosephTan\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\mbb_assignment_230301\target\classes\com\example\myapp\controller\getAcc.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.myapp.controller.getAcc]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	AccountRepository cannot be resolved to a type
+	Page cannot be resolved to a type
+	User cannot be resolved to a type
+	Pageable cannot be resolved to a type
+	PageRequest cannot be resolved
+	The method by(String[]) is undefined for the type SpringDataWebProperties.Sort
+	Page cannot be resolved to a type
+	AccountRepository cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.myapp.MbbAssignment230301Application.main(MbbAssignment230301Application.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.myapp.controller.getAcc]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	AccountRepository cannot be resolved to a type
+	Page cannot be resolved to a type
+	User cannot be resolved to a type
+	Pageable cannot be resolved to a type
+	PageRequest cannot be resolved
+	The method by(String[]) is undefined for the type SpringDataWebProperties.Sort
+	Page cannot be resolved to a type
+	AccountRepository cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326)
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	AccountRepository cannot be resolved to a type
+	Page cannot be resolved to a type
+	User cannot be resolved to a type
+	Pageable cannot be resolved to a type
+	PageRequest cannot be resolved
+	The method by(String[]) is undefined for the type SpringDataWebProperties.Sort
+	Page cannot be resolved to a type
+	AccountRepository cannot be resolved to a type
+
+	at com.example.myapp.controller.getAcc.<init>(getAcc.java:23)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 24 common frames omitted
